@@ -1,0 +1,23 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "启动程序",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "program": "${workspaceFolder}/bin/start.js", // cli 的入口文件
+      "args": [
+        "init",
+        "projectName"
+      ], // 命令参数
+      "console": "integratedTerminal" // 不使用默认值 internalTerminal。 
+      //使用 integratedTerminal vscode 集成的终端，externalTerminal 外部终端都是可以的。
+    }
+  ]
+}
