@@ -13,8 +13,7 @@
       ],
       "program": "${workspaceFolder}/bin/start.js", // cli 的入口文件
       "args": [
-        "init",
-        "projectName"
+        "webapp/src/components/agent/flow/AgentFlow.vue"
       ], // 命令参数
       "console": "integratedTerminal" // 不使用默认值 internalTerminal。 
       //使用 integratedTerminal vscode 集成的终端，externalTerminal 外部终端都是可以的。
