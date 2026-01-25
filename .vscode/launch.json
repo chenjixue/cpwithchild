@@ -8,17 +8,10 @@
       "type": "node",
       "request": "launch",
       "name": "启动程序",
-      "skipFiles": [
-        "<node_internals>/**"
-      ],
+      "skipFiles": ["<node_internals>/**"],
       "program": "${workspaceFolder}/bin/start.js", // cli 的入口文件
-      "args": [
-        "webapp/src/components/agent/flow/AgentFlow.vue",
-        "-a",
-        "@=src",
-        "$=srctest"
-      ], // 命令参数
-      "console": "integratedTerminal" // 不使用默认值 internalTerminal。 
+      "args": ["webapp/src/components/agent/flow/AgentFlow.vue", "-a", "@=src", "$=srctest"], // 命令参数
+      "console": "integratedTerminal" // 不使用默认值 internalTerminal。
       //使用 integratedTerminal vscode 集成的终端，externalTerminal 外部终端都是可以的。
     }
   ]
