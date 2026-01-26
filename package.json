@@ -1,14 +1,20 @@
 {
   "name": "cpwithchild",
-  "version": "1.0.8",
+  "version": "1.0.28",
   "description": "可以复制项目组件以及组件所使用的全部的相关引用文件并且不破坏目录层级",
   "main": "index.js",
   "type": "module",
   "bin": {
-    "cpwithchild": "./bin/start.js"
+    "cpwithchild": "bin/start.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier . --check",
+    "format:fix": "prettier . --write",
+    "fix:all": "eslint . --fix && prettier . --write",
+    "release": "node scripts/releasescript.cjs"
   },
   "keywords": [
     "cpwithchild"
@@ -21,5 +27,9 @@
     "fs": "^0.0.1-security",
     "fs-extra": "^11.3.0",
     "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "eslint": "^9.14.0",
+    "prettier": "^3.4.2"
   }
 }
