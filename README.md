@@ -3,18 +3,18 @@
 npm install cpwithchild -g
 ```
 ## 功能
-在项目根路径（xxxx/xxx.xx 文件相对与项目根路径的相对路径）递归复制全部组件相关文件
+递归复制指定文件的全部相关文件
 
 ### 基本用法
+在项目根路径执行以下命令（xxx/xxx/test.vue 文件相对与项目根路径的相对路径)
 ```bash
-cpwithchild xxxx/xxx[.后缀名]
+cpwithchild xxx/xxx/test.vue
 ```
 
 ### 配置路径别名
-组件import包含路径别名的话例如 `@/xxx.vue`, `$/xxx.vue` 可以选择配置路径别名：
-
+组件import包含路径别名例如 `import testchild from '@/xxx/testchild.vue'`, `import Style from '$/xxx/xxx.css'` 可以选择配置路径别名:
 ```
-cpwithchild xxxx/xxx[.后缀名] -a "@=src $=asset"
+cpwithchild xxx/xxx/test.vue -a "@=src $=asset"
 ```
 
 ### 注意事项
