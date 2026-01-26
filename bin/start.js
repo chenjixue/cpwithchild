@@ -14,6 +14,7 @@ program
   .version(`cpwithchild v${packageInfo.version}`, '-v, --version')
   .usage('[url] [options]')
 // 定义你的命令
+
 program
   .argument('[url]', '源文件的 URL') // 定义一个参数 <url>
   .option('-a, --alias <value>', '传入参数')
