@@ -1,6 +1,6 @@
 {
   "name": "cpwithchild",
-  "version": "1.0.13",
+  "version": "1.0.18",
   "description": "可以复制项目组件以及组件所使用的全部的相关引用文件并且不破坏目录层级",
   "main": "index.js",
   "type": "module",
@@ -13,7 +13,8 @@
     "lint:fix": "eslint . --fix",
     "format": "prettier . --check",
     "format:fix": "prettier . --write",
-    "fix:all": "eslint . --fix && prettier . --write"
+    "fix:all": "eslint . --fix && prettier . --write",
+    "release": "node scripts/releasescript.cjs"
   },
   "keywords": [
     "cpwithchild"
