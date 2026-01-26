@@ -1,6 +1,6 @@
 {
   "name": "cpwithchild",
-  "version": "1.0.23",
+  "version": "1.0.24",
   "description": "可以复制项目组件以及组件所使用的全部的相关引用文件并且不破坏目录层级",
   "main": "index.js",
   "type": "module",
