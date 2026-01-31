@@ -1,6 +1,6 @@
 {
   "name": "cpwithchild",
-  "version": "1.0.28",
+  "version": "1.0.29",
   "description": "可以复制项目组件以及组件所使用的全部的相关引用文件并且不破坏目录层级",
   "main": "index.js",
   "type": "module",
@@ -14,7 +14,8 @@
     "format": "prettier . --check",
     "format:fix": "prettier . --write",
     "fix:all": "eslint . --fix && prettier . --write",
-    "release": "node scripts/releasescript.cjs"
+    "release": "node scripts/releasescript.cjs",
+    "patch": "npm version patch --no-git-tag-version"
   },
   "keywords": [
     "cpwithchild"

@@ -6,7 +6,7 @@ npm install cpwithchild -g
 递归复制指定文件的全部相关文件
 
 ### 基本用法
-在项目根路径执行以下命令（xxx/xxx/test.vue 文件相对与项目根路径的相对路径)
+在项目根路径执行以下命令（xxx/xxx/test.vue 文件相对根目录路径)
 ```bash
 cpwithchild xxx/xxx/test.vue
 ```
