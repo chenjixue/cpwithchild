@@ -12,7 +12,10 @@ cpwithchild xxx/xxx/test.vue
 ```
 
 ### 配置路径别名
-如果组件xxx/xxx/test.vue的import包含路径别名例如 `import testchild from '@/xxx/testchild.vue'`, `import Style from '$/xxx/xxx.css'` 可以选择配置路径别名:
+如果组件xxx/xxx/test.vue的import包含路径别名,例如:  
+`import testchild from '@/xxx/testchild.vue'`  
+`import Style from '$/xxx/xxx.css'`  
+可以选择配置路径别名:
 ```
 cpwithchild xxx/xxx/test.vue -a "@=src $=asset"
 ```
